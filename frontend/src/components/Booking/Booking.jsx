@@ -37,7 +37,7 @@ const Booking = ({ tour, avgRating }) => {
     }
   }
 
- 
+
   const totalAmount = useMemo(() => {
     if (Number(booking.guestSize) < 4) {
       return price
@@ -48,7 +48,7 @@ const Booking = ({ tour, avgRating }) => {
     }
   }, [booking.guestSize])
 
-  //   send data to the server
+  
   const handleClick = async (e) => {
     e.preventDefault()
 
@@ -65,7 +65,7 @@ const Booking = ({ tour, avgRating }) => {
           'content-type': 'application/json',
           Authorization: `Bearer ${token}`,
         },
-     
+  
         body: JSON.stringify(booking),
       })
 
@@ -107,6 +107,7 @@ const Booking = ({ tour, avgRating }) => {
         </span>
       </div>
 
+
       <div className='booking__form'>
         <h5>Information</h5>
         <Form
@@ -131,7 +132,7 @@ const Booking = ({ tour, avgRating }) => {
               onChange={handleChange}
             />
           </FormGroup>
-          <FormGroup >
+          <FormGroup className='d-flex align-items-center gap-3'>
             <input
               type='date'
               placeholder=''
@@ -139,9 +140,6 @@ const Booking = ({ tour, avgRating }) => {
               required
               onChange={handleChange}
             />
-            </FormGroup>
-            <FormGroup >
-            <h6>Guest</h6>
             <input
               type='number'
               placeholder='Guest'
