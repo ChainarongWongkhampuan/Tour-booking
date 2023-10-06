@@ -1,14 +1,23 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "start-dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "name": "CourseFlow",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "echo \"No build specified\" && exit 1",
+        "test": "echo \"No test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ChainarongWongkhampuan/CourseFlow.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ChainarongWongkhampuan/CourseFlow/issues"
+    },
+    "homepage": "https://github.com/ChainarongWongkhampuan/CourseFlow#readme"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
